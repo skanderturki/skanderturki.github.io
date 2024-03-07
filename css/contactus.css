@@ -1,0 +1,42 @@
+.contactus {
+  width: 92%;
+  color: var(--primary-font-color);
+  margin: 40px;
+  padding: 30px;
+  border: solid 1px var(--primary-light-color);
+  border-radius: 10px;
+}
+
+#contactus-form {
+  margin: 20px;
+  input, textarea {
+    display: block;
+    margin: 20px 10px;
+    width: 95%;
+    line-height: 1.5;
+    padding: 3px 5px;
+  }
+  button {
+    margin: 10px;
+    border-radius: 10px;
+    height: 35px;
+    width: 20%;
+    margin-top: 30px;
+    font-weight: 600;
+    color: var(--primary-dark-color);
+    background-color: var(--secondary-light-color);
+    margin-left: 75%;
+  }
+
+}
+
+.form-actions {
+  width: 100%;
+  a {
+    color: white;
+  }
+  p {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}

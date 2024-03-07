@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./css/pricing.css">
   <link rel="stylesheet" href="./css/roadmap.css">
   <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/contactus.css">
   <link rel="stylesheet" href="./css/footer.css">
   <!-- javascript files -->
   <script src="./js/scripts.js"></script>
@@ -99,29 +100,9 @@
             <h4>Extensibility</h4>
             <p>The tool is based on eclipse and can be extended indefinetely.</p>
           </section>
-          <section>
-            <h4>Want to know more?</h4>
-            <p>Book your online demo today</p>
-            <p>Contact us at: <a href="skanderturki@gmail.com">skanderturki@gmail.com</a></p>
-            <form name="submit-to-google-sheet">
-              <input name="email" type="email" placeholder="Email" required>
-              <input name="message" type="text" placeholder="your message to us.." required>
-              <button type="submit">Send</button>
-            </form>
-            
-            <script>
-              const scriptURL = 'https://script.google.com/macros/s/AKfycbyPCFACaSVHiOWdAFWVQ0pCjt6wKcOa6pWJ16v33Ofi2jscLU_E18uqUK16gUfRpTIw_A/exec'
-              const form = document.forms['submit-to-google-sheet']
-            
-              form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                  .then(response => console.log('Success!', response))
-                  .catch(error => console.error('Error!', error.message))
-              })
-            </script>
-          </section>
+          
         </article>
+
         <!-- SUB ------------------------------------------- Start of Screenshots ------------->
         <div class="central-title">
           <h3>Screenshots</h3>
@@ -204,6 +185,36 @@
         </article>
       </section -->
       <!-------------------------------------------------- End of Team ----------------------------->
+      <section class="contactus">
+        <h4>Want to know more?</h4>
+        <p>Book your online demo today</p>
+        <form id="contactus-form" name="submit-to-google-sheet">
+          <div>
+            <label for="email">Your email:</label>
+            <input id="email" name="email" type="email" placeholder="Email" required>
+          </div>
+          <div>
+            <label for="message">Leave us a message and we'll come back to you:</label>
+            <textarea id="message" name="message" type="text" placeholder="your message to us.." cols="50" rows="5" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Send</button>
+            <p>Or contact us at: <a href="skanderturki@gmail.com">skanderturki@gmail.com</a></p>
+          </div>
+        </form>
+        
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbyPCFACaSVHiOWdAFWVQ0pCjt6wKcOa6pWJ16v33Ofi2jscLU_E18uqUK16gUfRpTIw_A/exec'
+          const form = document.forms['submit-to-google-sheet']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
+      </section>
   </main>
   <!-------------------------------------------------- End of Main ---------------------------->
   <!-------------------------------------------------- Start of Footer ----------------------------->
