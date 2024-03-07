@@ -238,10 +238,23 @@
             <div class="p-5 bg-primary rounded-1">
               <div class="py-3">
                 <h4 class="opacity-50 ls-2 lh-base fw-medium text-darker">READY TO START</h4>
-                <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-bold text-darker">Start Your Free Trial Today </h2>
+                <h2 class="mt-3 fs-4 fs-sm-7 latter-sp-3 lh-base fw-bold text-darker">Start Your Free Trial Today (not working yet)</h2>
               </div>
               <div class="flex-center d-flex">
-                <button class="btn btn-info">Get Started <span class="fas fa-arrow-right"></span></button>
+                  <form action="mailto:skanderturki@gmail.com"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    name="EmailForm">
+                        Name:<br>
+                        <input type="text" size="19" name="Contact-Name"><br><br>
+                        Email:<br>
+                        <input type="email" name="Contact-Email"><br><br> 
+                        Message:<br> 
+                        <textarea name="Contact-Message" rows="6″ cols="20″>
+                        </textarea><br><br> 
+                        <button type="submit" value="Submit">Send</button>
+                  </form> 
+                <!-- button class="btn btn-info">Get Started <span class="fas fa-arrow-right"></span></button -->
               </div>
             </div>
           </div>
