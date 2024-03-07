@@ -1,0 +1,23 @@
+.features {
+  width: 100%;
+  color: var(--primary-font-color);
+}
+
+.features-picture {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+
+.features-grid section {
+  border: solid 1px var(--primary-light-color);
+  border-radius: 10px;
+  padding: 20px;
+}

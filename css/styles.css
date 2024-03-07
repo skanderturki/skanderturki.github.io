@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --primary-dark-color: #151f42;
+  --primary-light-color: #6a99b8;
+  --secondary-light-color: #D6B85D;
+  --secondary-lighter-color: #815f14;
+  --secondary-darker-color: #121a36; /* #162044 */
+  --primary-font-color: rgb(126, 139, 182);
+  --secondary-font-color: #444444;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  background-color: var(--primary-dark-color);
+}
+
+body {
+  display: grid;
+  align-items: stretch;
+  justify-items: strech;
+  width: 100%;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 20px 35px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.product-picture {
+  width: 60%;
+  border-radius: 30px;
+}
+
+.central-title {
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+.pricing {
+  width: 95%;
+  color: var(--primary-font-color);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+
+.pricing-grid article {
+  border: solid 1px var(--primary-light-color);
+  border-radius: 10px;
+  padding: 20px;
+  p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  ul {
+    margin: 30px;
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding-left: var(--icon-space);
+  }
+  li:before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+    margin-top: 10px;
+  }
+}

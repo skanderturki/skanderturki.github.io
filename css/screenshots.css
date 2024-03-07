@@ -1,0 +1,18 @@
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+
+.screenshots-grid section {
+  border: solid 1px var(--primary-light-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.screenshots-grid img{
+  margin: 20px;
+  width: 95%;
+}
+

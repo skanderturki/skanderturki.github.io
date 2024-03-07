@@ -1,0 +1,47 @@
+header {
+  margin: 20px 0;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.banner img {
+  border-radius: 300px;
+  width: 70%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 5rem;
+  width: 100%;
+}
+
+.logo {
+  line-height: 5rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  margin: 0 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  line-height: 5rem;
+}
