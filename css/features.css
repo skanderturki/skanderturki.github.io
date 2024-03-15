@@ -1,6 +1,12 @@
 .features {
   width: 100%;
   color: var(--primary-font-color);
+  ul {
+    margin: 20px 50px;
+  }
+  li {
+    margin: 10px 0;
+  }
 }
 
 .features-picture {
