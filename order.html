@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- general meta tags -->
+  <meta charset="utf-8">
+  <meta name="author" content="Skander Turki">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- site specific tags -->
+  <title>Curriculum Designer</title>
+  <!-- style sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/css-reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/features.css">
+  <link rel="stylesheet" href="./css/screenshots.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/pricing.css">
+  <link rel="stylesheet" href="./css/roadmap.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/contactus.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/order.css">
+  <!-- javascript files -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/scripts.js"></script>
+
+</head>
+<body>
+  <!--------------------------------------------------- Start of Header ---------------------------------->
+  <include src="./partials/menu.html"></include>
+  <!-------------------------------------------------- End of Header ---------------------------->
+  <main>
+    <!-------------------------------------------------- Start of Pricing ------------------------------>
+    <div id="pricing" class="pricing central-title">
+      <h2>Order now</h2>
+    </div>
+    <section class="pricing pricing-grid">
+      <article>
+        <h3>Basic (Single license)</h3>
+        <p>1500 USD / Year</p>
+        <ul>
+          <li>Unlimited projects</li>
+          <li>Unlimited elements per project</li>
+          <li>Word, HTML, Text and SQL document generation</li>
+        </ul>
+        <button>Get it now</button>
+      </article>
+      <article>
+        <h3>Premium (Single license)</h3>
+        <p>2500 USD / Year</p>
+        <ul>
+          <li>Unlimited projects</li>
+          <li>Unlimited elements per project</li>
+          <li>Word, HTML, Text and SQL document generation</li>
+          <li>Free technical support (+ two templates personnalization)</li>
+        </ul>
+        <button>Get it now</button>
+      </article>
+    </section>
+    <!--------------------------------------------------- Buy form ------------------------------------>
+    <div id="buy" class="pricing central-title">
+      <h2>Get it now (Sorry: under construction)</h2>
+    </div>
+    <section class="form-section">
+      <form id="buy-form" class="site-form" action="/buy">
+        <legend>Buy a license of Curriculum Designer</legend>
+        <div>
+          <label>Choose a license type</label>
+          <select name="license" id="license-type">
+            <option value="basic">Basic license (single)</option>
+            <option value="premium">Premium license (single)</option>
+          </select>
+          <div>
+            <button>Order</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-------------------------------------------------- End of Main ---------------------------->
+  <!-------------------------------------------------- Start of Footer ----------------------------->
+  <include src="./partials/footer.html"></include>
+  <!-------------------------------------------------- End of Footer ---------------------------->
+  <script src="./js/includes.js"></script>
+</body>
+</html>

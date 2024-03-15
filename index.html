@@ -26,40 +26,7 @@
 </head>
 <body>
   <!--------------------------------------------------- Start of Header ---------------------------------->
-  <header>
-    <!-- Site showcase -->
-    <section class="banner">
-      <img src="assets/img/banner.png" alt="banner Curriculum Designer">
-    </section>
-    <nav class="navbar">
-      <a class="logo" href="#">
-        <img src="assets/img/logo_sir.png">
-      </a>
-      <ul class="menu">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#features">Features</a>
-        </li>
-        <!-- li>
-          <a href="#services">Services</a>
-        </li -->
-        <li>
-          <a href="#pricing">Pricing</a>
-        </li>
-        <!--li>
-          <a href="#roadmap">RoadMap</a>
-        </li>
-        <li>
-          <a href="#team">Team</a>
-        </li -->
-        <li>
-          <a href="#contactus">Contact Us</a>
-        </li>
-      </ul>
-    </nav>   
-  </header>
+  <include src="./partials/menu.html"></include>
   <!-------------------------------------------------- End of Header ---------------------------->
   <!-------------------------------------------------- Start of Main Content ----------------------------->
   <main>
@@ -189,10 +156,10 @@
         </article>
       </section -->
       <!-------------------------------------------------- End of Team ----------------------------->
-      <section id="contactus" class="contactus">
+      <section id="contactus" class="form-section">
         <h4>Want to know more?</h4>
         <p>Book your online demo today</p>
-        <form id="contactus-form" name="submit-to-google-sheet">
+        <form class="site-form" name="submit-to-google-sheet">
           <div>
             <label for="email">Your email:</label>
             <input id="email" name="email" type="email" placeholder="Email" required>
@@ -234,17 +201,8 @@
   </main>
   <!-------------------------------------------------- End of Main ---------------------------->
   <!-------------------------------------------------- Start of Footer ----------------------------->
-  <footer>
-    <!--section class="footer-icons-section">
-      <a href="mailto:skanderturki@gmail.com?subject=Contact about Curriculum Designer"><img class="footer-icons" src="assets/img/facebook_dark.svg" alt="fb" /></a>
-      <a href="mailto:skanderturki@gmail.com?subject=Contact about Curriculum Designer"><img class="footer-icons" src="assets/img/linkedin_dark.svg" alt="in" /></a>
-      <a href="mailto:skanderturki@gmail.com?subject=Contact about Curriculum Designer"><img class="footer-icons" src="assets/img/twitter_dark.svg" alt="twitter" /></a>
-    </section -->
-    <section class="footer-links">
-      <p>Contact us at <a href="mailto:skanderturki@gmail.com?subject=Contact about Curriculum Designer">skanderturki@gmail.com</a></p>
-      <p>&copy; Made by <a href="https://modelingera.com/" target="_blank"> Modeling Era</a></p>
-    </section>
-  </footer>
+  <include src="./partials/footer.html"></include>
   <!-------------------------------------------------- End of Footer ---------------------------->
+  <script src="./js/includes.js"></script>
 </body>
 </html>

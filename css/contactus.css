@@ -1,5 +1,5 @@
-.contactus {
-  width: 92%;
+.form-section {
+  width: 85%;
   color: var(--primary-font-color);
   margin: 40px;
   padding: 30px;
@@ -7,27 +7,24 @@
   border-radius: 10px;
 }
 
-#contactus-form {
+.site-form {
   margin: 20px;
-  input, textarea {
+  input, textarea, select {
     display: block;
     margin: 20px 10px;
     width: 95%;
     line-height: 1.5;
     padding: 3px 5px;
   }
+  legend, label {
+    margin-bottom: 30px;
+  }
   button {
     margin: 10px;
-    border-radius: 10px;
-    height: 35px;
     width: 20%;
     margin-top: 30px;
-    font-weight: 600;
-    color: var(--primary-dark-color);
-    background-color: var(--secondary-light-color);
     margin-left: 75%;
   }
-
 }
 
 .form-actions {

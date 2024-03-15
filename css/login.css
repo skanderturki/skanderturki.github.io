@@ -1,0 +1,5 @@
+#login-section a {
+  text-decoration: none;
+  color: var(--secondary-light-color);
+  line-height: 5rem;
+}

@@ -30,6 +30,11 @@ body {
   max-width: 100%;
 }
 
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
 h2 {
   font-size: 2rem;
   font-style: italic;
@@ -59,4 +64,15 @@ p {
 
 .central-title {
   text-align: center;
+}
+
+button {
+  margin-top: auto;
+  border-radius: 10px;
+  height: 35px;
+  width: 30%;
+  font-weight: 600;
+  color: var(--primary-dark-color);
+  background-color: var(--secondary-light-color);
+  margin-left: 65%;
 }

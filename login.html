@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- general meta tags -->
+  <meta charset="utf-8">
+  <meta name="author" content="Skander Turki">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- site specific tags -->
+  <title>Curriculum Designer</title>
+  <!-- style sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/css-reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/features.css">
+  <link rel="stylesheet" href="./css/screenshots.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/pricing.css">
+  <link rel="stylesheet" href="./css/roadmap.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/contactus.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <!-- javascript files -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/scripts.js"></script>
+</head>
+<body>
+  <!--------------------------------------------------- Start of Header ---------------------------------->
+  <include src="./partials/menu.html"></include>
+  <!-------------------------------------------------- End of Header ---------------------------->
+  <!-------------------------------------------------- Start of Main Content ----------------------------->
+  <main>
+    <section id="login-section" class="form-section">
+      <h4>Login</h4>
+      <p>or <a href="register.html">Register</a> if you are not already.</p>
+      <form class="site-form" name="submit-to-google-sheet">
+        <div>
+          <label for="email">Your email:</label>
+          <input id="email" name="email" type="email" placeholder="Email" required>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input id="password" name="password" type="password" required></input>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Send</button>
+          <p>Our contact: <a href="skanderturki@gmail.com">skanderturki@gmail.com</a></p>
+        </div>
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyPCFACaSVHiOWdAFWVQ0pCjt6wKcOa6pWJ16v33Ofi2jscLU_E18uqUK16gUfRpTIw_A/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              Swal.fire({
+                icon: "success",
+                title: "Thanks for your interest, we'll get back to you as soon as possible",
+                text: "We received your message!",
+              });
+            })
+            .catch(error => {
+              Swal.fire({
+                icon: "error",
+                title: "Oups, something went wrong",
+                text: "Please try again!",
+              });
+            })
+        })
+      </script>
+    </section>
+  </main>
+  <!-------------------------------------------------- End of Main ---------------------------->
+  <!-------------------------------------------------- Start of Footer ----------------------------->
+  <include src="./partials/footer.html"></include>
+  <!-------------------------------------------------- End of Footer ---------------------------->
+  <script src="./js/includes.js"></script>
+</body>
+</html>
