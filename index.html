@@ -185,19 +185,22 @@
         
           form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            fetch(scriptURL, { redirect: 'follow', mode: 'no-cors', method: 'POST', body: new FormData(form)})
               .then(response => {
                 Swal.fire({
                   icon: "success",
                   title: "Thanks for your interest, we'll get back to you as soon as possible",
                   text: "We received your message!",
+                  buttonsStyling: "false",
                 });
               })
               .catch(error => {
+                console.log(error);
                 Swal.fire({
                   icon: "error",
                   title: "Oups, something went wrong",
                   text: "Please try again!",
+                  buttonsStyling: "false",
                 });
               })
           })
